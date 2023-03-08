@@ -1,0 +1,1 @@
+C:\xampp\mysql\bin>mysql -u {db_user} -p {db_name} < path/to/file/database_to_import.sql
