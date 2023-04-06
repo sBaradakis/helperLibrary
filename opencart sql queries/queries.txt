@@ -1,0 +1,10 @@
+===================================================
+Get category id's has not assigned to products
+
+SELECT c.category_id
+FROM oooc_product_to_category AS ptc
+RIGHT JOIN oooc_category AS c
+ON ptc.category_id = c.category_id
+WHERE ptc.category_id IS NULL
+GROUP BY c.category_id
+===================================================
